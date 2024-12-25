@@ -1,0 +1,84 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.close-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 15px;
+}
+.close-icon:hover {
+  transform: scale(1.2);
+}
+
+.input-field {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 5px;
+  justify-content: start;
+  align-items: center;
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px 5px;
+    margin: 0px;
+    padding: 0px;
+    li:not(:last-child) {
+      display: flex;
+      font-size: small;
+      font-weight: 500;
+      padding: 2px 10px 0px 10px;
+      border-radius: 5px;
+      border: 1px solid grey;
+      align-items: center;
+      padding: 5px 10px;
+      button {
+        all: unset;
+        color: red;
+        font-weight: 800;
+        padding-left: 5px;
+        display: flex;
+        align-items: center;
+      }
+      button:hover {
+      }
+    }
+  }
+}
+.input-search {
+  border: none;
+  display: flex;
+  align-items: center;
+  input {
+    all: unset;
+    min-width: 180px;
+    flex: 1;
+    text-align: start;
+    padding: 4px 10px;
+    font-size: smaller;
+  }
+}
+.input-field:hover {
+  border-color: blue;
+}
+.options {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    width: 100%;
+    li:hover {
+      background-color: skyblue;
+      cursor: pointer;
+    }
+  }
+}
+.selectedOption {
+  background-color: skyblue;
+}
